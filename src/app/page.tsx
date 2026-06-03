@@ -272,7 +272,7 @@ function Work() {
       category: 'Documentation',
       description: 'Capturing the essence of social impact programmes through video and written storytelling. Preserving truth and emotion in every frame.',
       clients: ['Lixil', 'BMGF', 'Ahmedabad', 'Rajasthan', 'Chhindwara'],
-      link: 'https://drive.google.com/file/d/1auLyxW2RBea_F1_6eI9yd1QoR5JDc7zb/view' as string | undefined,
+      link: '/work/documentation' as string | undefined,
       externalLink: undefined as string | undefined,
       image: '/work-documentation.gif',
     },

@@ -29,11 +29,13 @@ export default function DocumentationPage() {
           transition={{ duration: 0.8, delay: 0.15, ease: [0.25, 0.1, 0.25, 1] }}
           className="mb-16 mt-8"
         >
-          <img
-            src="/work-documentation.gif"
-            alt="Documentation & Storytelling"
-            className="w-full aspect-video object-cover rounded-sm"
-          />
+          <a href="https://drive.google.com/file/d/1auLyxW2RBea_F1_6eI9yd1QoR5JDc7zb/view" target="_blank" rel="noopener noreferrer" className="block cursor-pointer group">
+            <img
+              src="/work-documentation.gif"
+              alt="Documentation & Storytelling"
+              className="w-full aspect-video object-cover rounded-sm transition-transform duration-700 group-hover:scale-[1.02]"
+            />
+          </a>
         </motion.div>
 
         {/* Overview */}
