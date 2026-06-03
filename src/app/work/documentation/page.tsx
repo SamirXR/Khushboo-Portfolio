@@ -79,7 +79,7 @@ export default function DocumentationPage() {
               <img
                 src="/work-fieldstorytelling.gif"
                 alt="Field-Based Storytelling"
-                className="w-full aspect-[4/3] object-cover rounded-sm"
+                className="w-full object-contain rounded-sm"
               />
             </div>
           </div>
