@@ -272,7 +272,7 @@ function Work() {
       category: 'Documentation',
       description: 'Capturing the essence of social impact programmes through video and written storytelling. Preserving truth and emotion in every frame.',
       clients: ['Lixil', 'BMGF', 'Ahmedabad', 'Rajasthan', 'Chhindwara'],
-      link: '/work/documentation' as string | undefined,
+      link: 'https://drive.google.com/file/d/1auLyxW2RBea_F1_6eI9yd1QoR5JDc7zb/view' as string | undefined,
       externalLink: undefined as string | undefined,
       image: '/work-documentation.gif',
     },
@@ -339,15 +339,27 @@ function Work() {
                 transition={{ duration: 0.7, delay: i * 0.07, ease: [0.25, 0.1, 0.25, 1] }}
               >
                 <div className="work-card-v2 group">
-                  <Link href={item.link || '#'} className={item.link ? 'cursor-pointer' : 'cursor-default'}>
-                    <div className="relative overflow-hidden rounded-sm mb-5">
-                      <img
-                        src={item.image}
-                        alt={item.category}
-                        className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
-                      />
-                    </div>
-                  </Link>
+                  {item.link && item.link.startsWith('http') ? (
+                    <a href={item.link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
+                      <div className="relative overflow-hidden rounded-sm mb-5">
+                        <img
+                          src={item.image}
+                          alt={item.category}
+                          className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                        />
+                      </div>
+                    </a>
+                  ) : (
+                    <Link href={item.link || '#'} className={item.link ? 'cursor-pointer' : 'cursor-default'}>
+                      <div className="relative overflow-hidden rounded-sm mb-5">
+                        <img
+                          src={item.image}
+                          alt={item.category}
+                          className="w-full aspect-[4/3] object-cover transition-transform duration-700 group-hover:scale-[1.02]"
+                        />
+                      </div>
+                    </Link>
+                  )}
 
                   <div className="flex items-baseline gap-3 mb-3">
                     <span className="section-label shrink-0">{item.number}</span>
@@ -368,7 +380,11 @@ function Work() {
                     {item.link && (
                       <React.Fragment key="see-more">
                         {item.clients.length > 0 && <span className="text-[#a0877a] mx-2 text-[0.55rem]">&middot;</span>}
-                        <Link href={item.link} className="warm-tag hover:text-[#2c2825] cursor-pointer">See more ↗</Link>
+                        {item.link.startsWith('http') ? (
+                          <a href={item.link} target="_blank" rel="noopener noreferrer" className="warm-tag hover:text-[#2c2825] cursor-pointer">See more ↗</a>
+                        ) : (
+                          <Link href={item.link} className="warm-tag hover:text-[#2c2825] cursor-pointer">See more ↗</Link>
+                        )}
                       </React.Fragment>
                     )}
                     {item.externalLink && (
