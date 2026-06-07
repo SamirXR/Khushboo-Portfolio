@@ -94,16 +94,13 @@ export default function DocumentationPage() {
           viewport={{ once: true, margin: '-30px' }}
           transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          <div className="max-w-2xl">
-            <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">End-to-End Documentation Leadership</h2>
-            <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-10">
-              Over the years, I have independently handled multiple stages of the documentation pipeline, from concept development to final delivery.
-            </p>
-          </div>
-
           {/* Video Documentation */}
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start mb-10">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
+              <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">End-to-End Documentation Leadership</h2>
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-8">
+                Over the years, I have independently handled multiple stages of the documentation pipeline, from concept development to final delivery.
+              </p>
               <h3 className="text-[0.85rem] font-normal tracking-tight mb-4">Video Documentation</h3>
               <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-4">
                 My work included:
@@ -128,11 +125,11 @@ export default function DocumentationPage() {
                 ))}
               </ul>
             </div>
-            <div className="flex justify-center lg:justify-end">
+            <div className="relative overflow-hidden rounded-sm lg:max-w-sm lg:ml-auto">
               <img
                 src="/work-documentation-video.gif"
                 alt="Video Documentation"
-                className="max-w-[280px] h-auto object-contain rounded-sm"
+                className="w-full object-contain rounded-sm"
               />
             </div>
           </div>
