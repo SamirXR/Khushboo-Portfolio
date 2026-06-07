@@ -287,12 +287,12 @@ function Work() {
     },
     {
       number: '04',
-      category: 'Writing & Thought Pieces',
-      description: 'Long-form pieces around identity, modern intimacy, emotional culture, gender, burnout, internet behavior, freedom and selfhood.',
-      clients: ['Substack'],
-      link: undefined as string | undefined,
-      externalLink: 'https://substack.com' as string | undefined,
-      image: '/work-writing.png',
+      category: 'Brand & Voice',
+      description: 'Shaping how organisations speak, sound, and show up. Naming, tone, language systems, and verbal identity for brands that want to feel alive, not automated.',
+      clients: [] as string[],
+      link: '/work/brand' as string | undefined,
+      externalLink: undefined as string | undefined,
+      image: '/work-brand.png',
     },
     {
       number: '05',
@@ -305,12 +305,12 @@ function Work() {
     },
     {
       number: '06',
-      category: 'Brand & Voice',
-      description: 'Shaping how organisations speak, sound, and show up. Naming, tone, language systems, and verbal identity for brands that want to feel alive, not automated.',
-      clients: [] as string[],
-      link: '/work/brand' as string | undefined,
-      externalLink: undefined as string | undefined,
-      image: '/work-brand.png',
+      category: 'Writing & Thought Pieces',
+      description: 'Long-form pieces around identity, modern intimacy, emotional culture, gender, burnout, internet behavior, freedom and selfhood.',
+      clients: ['Substack'],
+      link: undefined as string | undefined,
+      externalLink: 'https://substack.com' as string | undefined,
+      image: '/work-writing.png',
     },
   ]
 
