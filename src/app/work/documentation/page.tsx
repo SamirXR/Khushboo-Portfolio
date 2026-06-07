@@ -135,7 +135,7 @@ export default function DocumentationPage() {
           </div>
 
           {/* Written Documentation */}
-          <div className="mb-16">
+          <div className="mb-16 pt-12 md:pt-16">
             <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-4">
               Alongside films, I also worked extensively on written documentation and publication projects. This included:
             </p>
