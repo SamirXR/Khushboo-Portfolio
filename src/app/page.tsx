@@ -440,7 +440,7 @@ function Contact() {
 
           <div className="mt-20 quiet-rule mb-6" />
           <p className="font-mono text-[0.5rem] tracking-[0.3em] uppercase text-[#a0877a]">
-            Less interested in perfection; more interested in thoughtfulness over loud work
+            Less interested in perfection; more interested in thoughtfulness
           </p>
         </div>
       </div>
