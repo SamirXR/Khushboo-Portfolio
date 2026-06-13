@@ -108,7 +108,7 @@ function Hero() {
             transition={{ duration: 1.5, delay: 0.4 }}
             className="section-label mb-14 md:mb-20"
           >
-            Creative strategist, storyteller, and documentation expert working at the intersection of social impact and narrative.
+            Creative strategist, storyteller, cultural observer
           </motion.p>
 
           <h1 className="hero-name">
@@ -131,33 +131,13 @@ function Hero() {
           </h1>
 
           <motion.div
-            className="max-w-lg mt-14 md:mt-20"
+            className="max-w-sm mt-14 md:mt-20"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5, delay: 1.3 }}
           >
-            <p className="text-[0.95rem] md:text-base font-light leading-[1.8] text-[#8a8078] mb-8">
-              Selected clients and collaborators:
-            </p>
-            <p className="text-[0.8rem] md:text-[0.85rem] font-light leading-[2] text-[#a0877a]">
-              {[
-                'UNICEF (India Office and State Offices)',
-                'WHO (Country Office and SEARO)',
-                'UN Women',
-                'International Labour Organisation (Delhi office)',
-                'Government departments (notably DDWS and NVBDCP)',
-                'Social Enterprises',
-                'Startups',
-              ].map((client, i) => (
-                <motion.span
-                  key={i}
-                  initial={{ opacity: 0 }}
-                  animate={{ opacity: 1 }}
-                  transition={{ delay: 1.5 + i * 0.08, duration: 0.6 }}
-                >
-                  {client}{i < 6 && <span className="mx-2">&middot;</span>}
-                </motion.span>
-              ))}
+            <p className="text-[0.95rem] md:text-base font-light leading-[1.8] text-[#8a8078]">
+              I build emotionally intelligent work that helps people feel, reflect, and connect.
             </p>
           </motion.div>
         </div>
