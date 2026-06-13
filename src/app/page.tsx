@@ -308,8 +308,8 @@ function Work() {
       category: 'Writing & Thought Pieces',
       description: 'Long-form pieces around identity, modern intimacy, emotional culture, gender, burnout, internet behavior, freedom and selfhood.',
       clients: ['Substack'],
-      link: undefined as string | undefined,
-      externalLink: 'https://substack.com' as string | undefined,
+      link: '/work/writing' as string | undefined,
+      externalLink: undefined as string | undefined,
       image: '/work-writing.png',
     },
   ]
