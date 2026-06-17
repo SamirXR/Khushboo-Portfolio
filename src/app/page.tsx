@@ -149,6 +149,7 @@ function Hero() {
             transition={{ duration: 1.5, delay: 1.7 }}
           >
             <div className="quiet-rule mb-6 opacity-50" />
+            <div className="section-label mb-4">Clients and Collaborators</div>
             <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide leading-[2.2] text-[#a0877a]">
               {[
                 'UNICEF (India Office and State Offices)',
