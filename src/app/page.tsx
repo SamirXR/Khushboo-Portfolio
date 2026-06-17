@@ -131,13 +131,13 @@ function Hero() {
           </h1>
 
           <motion.div
-            className="max-w-sm mt-14 md:mt-20"
+            className="max-w-md mt-14 md:mt-20"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5, delay: 1.3 }}
           >
             <p className="text-[0.95rem] md:text-base font-light leading-[1.8] text-[#8a8078]">
-              I build emotionally intelligent work that helps people feel, reflect, and connect.
+              Creative strategist, storyteller, and documentation expert working at the intersection of social impact and narrative.
             </p>
           </motion.div>
         </div>
@@ -167,7 +167,7 @@ function About() {
 
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 lg:gap-32 items-stretch">
             {/* Left */}
-            <div className="lg:col-span-5 flex flex-col justify-between">
+            <div className="lg:col-span-8 flex flex-col justify-between max-w-2xl">
               <div>
                 <h2 className="text-2xl md:text-3xl font-light tracking-tight leading-[1.4] mb-10">
                   I come from a background in creative strategy and communication work across social impact and culture.
@@ -202,53 +202,40 @@ function About() {
                 ))}
               </div>
             </div>
-
-            {/* Right */}
-            <div className="lg:col-span-7 flex flex-col justify-between max-w-lg">
-              <div>
-                <div className="section-label mb-5">What I care about</div>
-                <div className="space-y-2.5">
-                  {[
-                    'Work that makes people pause',
-                    'Saying difficult things honestly',
-                    'Creating emotional connection',
-                    'Work that feels aesthetically alive',
-                    'Has emotional honesty',
-                    'Has psychological nuance',
-                  ].map((item, i) => (
-                    <motion.div
-                      key={i}
-                      className="flex items-center gap-2.5"
-                      initial={{ opacity: 0, x: -6 }}
-                      whileInView={{ opacity: 1, x: 0 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: i * 0.08, duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
-                    >
-                      <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60" />
-                      <span className="text-[0.85rem] md:text-[0.9rem] font-light">{item}</span>
-                    </motion.div>
-                  ))}
-                </div>
-              </div>
-
-              <div>
-                <div className="section-label mb-5">Currently exploring the intersection of</div>
-                <p className="text-[0.75rem] font-light tracking-wide text-[#6b6560] leading-[2.2]">
-                  {['Emotional Culture', 'Identity', 'Gender', 'Visual Narrative', 'Human Contradiction'].map((tag, i) => (
-                    <motion.span
-                      key={i}
-                      initial={{ opacity: 0 }}
-                      whileInView={{ opacity: 1 }}
-                      viewport={{ once: true }}
-                      transition={{ delay: i * 0.05, duration: 0.6 }}
-                    >
-                      {tag}{i < 4 && <span className="text-[#a0877a] mx-2">&middot;</span>}
-                    </motion.span>
-                  ))}
-                </p>
-              </div>
-            </div>
           </div>
+
+          {/* Selected clients & collaborators */}
+          <motion.div
+            initial={{ opacity: 0, y: 12 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: '-30px' }}
+            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+            className="mt-20 md:mt-28 max-w-3xl"
+          >
+            <div className="quiet-rule mb-10" />
+            <div className="section-label mb-6">Selected clients and collaborators</div>
+            <p className="text-[0.8rem] md:text-[0.85rem] font-light leading-[2.4] text-[#6b6560]">
+              {[
+                'UNICEF (India Office and State Offices)',
+                'WHO (Country Office and SEARO)',
+                'UN Women',
+                'International Labour Organisation (Delhi office)',
+                'Government departments (notably DDWS and NVBDCP)',
+                'Social Enterprises',
+                'Startups',
+              ].map((client, i, arr) => (
+                <motion.span
+                  key={i}
+                  initial={{ opacity: 0 }}
+                  whileInView={{ opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ delay: i * 0.05, duration: 0.6 }}
+                >
+                  {client}{i < arr.length - 1 && <span className="text-[#a0877a] mx-2">&middot;</span>}
+                </motion.span>
+              ))}
+            </p>
+          </motion.div>
         </div>
       </div>
     </Section>
@@ -296,17 +283,17 @@ function Work() {
     },
     {
       number: '05',
-      category: 'Visual & Experimental',
-      description: 'Exploring photography, movement, fragments, urban life, human emotion, and visual storytelling through a deeply personal lens.',
+      category: 'Uncurtained Windows',
+      description: 'Photography. Visual essays. Poems. Exhibition ideas. Short film scripts. Half-finished concepts. Pitches that never left the drafts folder.',
       clients: [] as string[],
-      link: undefined as string | undefined,
+      link: '/work/visual' as string | undefined,
       externalLink: undefined as string | undefined,
       image: '/work-visual.png',
     },
     {
       number: '06',
-      category: 'Writing & Thought Pieces',
-      description: 'Long-form pieces around identity, modern intimacy, emotional culture, gender, burnout, internet behavior, freedom and selfhood.',
+      category: 'Shapes of Feelings',
+      description: 'Writings and thought pieces on belonging, becoming, and the ordinary moments that quietly reveal us.',
       clients: ['Substack'],
       link: '/work/writing' as string | undefined,
       externalLink: undefined as string | undefined,
@@ -371,15 +358,8 @@ function Work() {
                   </p>
 
                   <div className="flex flex-wrap items-center">
-                    {item.clients.map((client, j) => (
-                      <React.Fragment key={j}>
-                        {j > 0 && <span className="text-[#a0877a] mx-2 text-[0.55rem]">&middot;</span>}
-                        <span className="warm-tag">{client}</span>
-                      </React.Fragment>
-                    ))}
                     {item.link && (
                       <React.Fragment key="see-more">
-                        {item.clients.length > 0 && <span className="text-[#a0877a] mx-2 text-[0.55rem]">&middot;</span>}
                         {item.link.startsWith('http') ? (
                           <a href={item.link} target="_blank" rel="noopener noreferrer" className="warm-tag hover:text-[#2c2825] cursor-pointer">See more ↗</a>
                         ) : (

@@ -18,8 +18,8 @@ export default function WritingPage() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
         >
-          <div className="section-label mb-6">06 — Writing &amp; Thought Pieces</div>
-          <h1 className="text-3xl md:text-5xl font-extralight tracking-tight mb-4">Writing &amp; Thought Pieces</h1>
+          <div className="section-label mb-6">06 — Shapes of Feelings</div>
+          <h1 className="text-3xl md:text-5xl font-extralight tracking-tight mb-4">Shapes of Feelings</h1>
         </motion.div>
 
         {/* Hero Image */}
@@ -44,7 +44,94 @@ export default function WritingPage() {
           className="max-w-2xl"
         >
           <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
-            Long-form pieces around identity, modern intimacy, emotional culture, gender, burnout, internet behavior, freedom and selfhood.
+            Writings and thought pieces on belonging, becoming, and the ordinary moments that quietly reveal us.
+          </p>
+        </motion.div>
+
+        {/* Long-form body */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-30px' }}
+          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          className="max-w-2xl pt-4"
+        >
+          <div className="quiet-rule mb-10" />
+
+          <div className="space-y-7 text-[#6b6560]">
+            <p className="text-[0.9rem] font-light leading-[1.9]">
+              I write about the shapes feelings take, as an ongoing attempt to map the interior landscapes we often assume we inhabit alone.
+            </p>
+
+            <p className="text-[0.9rem] font-light leading-[1.9]">
+              The ones that don&apos;t have neat names. The quiet recognitions, private contradictions, and ordinary moments that alter the landscape within us. A rainy afternoon. The relief of solitude. The ache of not fitting in. The strange experience of arriving, almost accidentally, at a different version of your life.
+            </p>
+
+            <p className="text-[0.9rem] font-light leading-[1.9]">
+              I don&apos;t write to tell people what to think. I write to understand what I felt. To examine experiences that seemed small from the outside but carried unexpected meaning beneath the surface.
+            </p>
+
+            <p className="text-[0.9rem] font-light leading-[1.9]">
+              I am interested in the distance between who we are and who we believe we should be. In the stories we inherit about belonging, success, love, and identity, and what happens when those stories fail to hold us. I wonder why some social structures feel like homes to some people and cages to others, and how we might build communities rooted instead in care.
+            </p>
+
+            <p className="text-[0.9rem] font-light leading-[1.9]">
+              I care less about polished conclusions and more about recognition. If someone reads a piece and finds language for something they have carried for years, or laughs at an uncomfortable truth they had never admitted aloud, then the words have done their work.
+            </p>
+
+            <p className="text-[0.9rem] font-light leading-[1.9] italic text-[#8a8078]">
+              These essays are my way of paying attention. Of connecting seemingly unrelated moments until a different shape of understanding begins to emerge.
+            </p>
+          </div>
+        </motion.div>
+
+        {/* What I care about */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-30px' }}
+          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
+          className="pt-12 max-w-2xl"
+        >
+          <div className="quiet-rule mb-10" />
+
+          <div className="section-label mb-5">What I care about</div>
+          <div className="space-y-2.5 mb-14">
+            {[
+              'Work that makes people pause',
+              'Saying difficult things honestly',
+              'Creating emotional connection',
+              'Work that feels aesthetically alive',
+              'Has emotional honesty',
+              'Has psychological nuance',
+            ].map((item, i) => (
+              <motion.div
+                key={i}
+                className="flex items-center gap-2.5"
+                initial={{ opacity: 0, x: -6 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.08, duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
+              >
+                <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60" />
+                <span className="text-[0.85rem] md:text-[0.9rem] font-light text-[#2c2825]">{item}</span>
+              </motion.div>
+            ))}
+          </div>
+
+          <div className="section-label mb-5">Currently exploring the intersection of</div>
+          <p className="text-[0.75rem] font-light tracking-wide text-[#6b6560] leading-[2.2]">
+            {['Emotional Culture', 'Identity', 'Gender', 'Visual Narrative', 'Human Contradiction'].map((tag, i) => (
+              <motion.span
+                key={i}
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.05, duration: 0.6 }}
+              >
+                {tag}{i < 4 && <span className="text-[#a0877a] mx-2">&middot;</span>}
+              </motion.span>
+            ))}
           </p>
         </motion.div>
 
