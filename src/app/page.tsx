@@ -140,6 +140,31 @@ function Hero() {
               Creative strategist, storyteller, and documentation expert working at the intersection of social impact and narrative.
             </p>
           </motion.div>
+
+          {/* Selected clients & collaborators */}
+          <motion.div
+            className="max-w-xl mt-10 md:mt-14"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 1.5, delay: 1.7 }}
+          >
+            <div className="quiet-rule mb-6 opacity-50" />
+            <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide leading-[2.2] text-[#a0877a]">
+              {[
+                'UNICEF (India Office and State Offices)',
+                'WHO (Country Office and SEARO)',
+                'UN Women',
+                'International Labour Organisation (Delhi office)',
+                'Government departments (notably DDWS and NVBDCP)',
+                'Social Enterprises',
+                'Startups',
+              ].map((client, i, arr) => (
+                <span key={i}>
+                  {client}{i < arr.length - 1 && <span className="text-[#a0877a] mx-1.5">&middot;</span>}
+                </span>
+              ))}
+            </p>
+          </motion.div>
         </div>
       </motion.div>
 
@@ -203,39 +228,6 @@ function About() {
               </div>
             </div>
           </div>
-
-          {/* Selected clients & collaborators */}
-          <motion.div
-            initial={{ opacity: 0, y: 12 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: '-30px' }}
-            transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-            className="mt-20 md:mt-28 max-w-3xl"
-          >
-            <div className="quiet-rule mb-10" />
-            <div className="section-label mb-6">Selected clients and collaborators</div>
-            <p className="text-[0.8rem] md:text-[0.85rem] font-light leading-[2.4] text-[#6b6560]">
-              {[
-                'UNICEF (India Office and State Offices)',
-                'WHO (Country Office and SEARO)',
-                'UN Women',
-                'International Labour Organisation (Delhi office)',
-                'Government departments (notably DDWS and NVBDCP)',
-                'Social Enterprises',
-                'Startups',
-              ].map((client, i, arr) => (
-                <motion.span
-                  key={i}
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  viewport={{ once: true }}
-                  transition={{ delay: i * 0.05, duration: 0.6 }}
-                >
-                  {client}{i < arr.length - 1 && <span className="text-[#a0877a] mx-2">&middot;</span>}
-                </motion.span>
-              ))}
-            </p>
-          </motion.div>
         </div>
       </div>
     </Section>
