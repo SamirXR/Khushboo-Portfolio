@@ -120,7 +120,7 @@ export default function BrandVoicePage() {
         >
           <div className="section-label mb-6">Brand &amp; Voice Catalogue</div>
           <img
-            src="/work-brand-catalogue.png"
+            src="/work-brand-catalogue-v2.png"
             alt="Brand & Voice Catalogue"
             className="w-full rounded-sm"
           />
