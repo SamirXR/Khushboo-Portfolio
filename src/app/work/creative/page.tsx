@@ -35,6 +35,9 @@ export default function CreativeDirectionPage() {
               alt="Creative Direction"
               className="w-full aspect-video object-cover rounded-sm transition-transform duration-700 group-hover:scale-[1.02]"
             />
+            <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#a0877a] mt-3">
+              PSA for dengue season, commissioned by WHO for NVBDCP
+            </p>
           </a>
         </motion.div>
 
@@ -123,6 +126,9 @@ export default function CreativeDirectionPage() {
                 alt="Creative Direction Work"
                 className="w-full object-contain rounded-sm transition-transform duration-700 group-hover:scale-[1.02]"
               />
+              <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#a0877a] mt-3">
+                Video for UN Women for Textile Industry Coalition initiative
+              </p>
             </a>
           </div>
         </motion.div>
