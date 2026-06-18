@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function WritingPage() {
   return (
-    <main className="min-h-screen bg-[#f8f5f1]">
+    <main className="min-h-screen bg-[transparent]">
       {/* Back link */}
       <div className="max-w-[1100px] mx-auto px-6 md:px-10 pt-8">
         <Link href="/#work" className="nav-link inline-block">&larr; Back to Work</Link>
@@ -43,7 +43,7 @@ export default function WritingPage() {
           transition={{ duration: 0.8, delay: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
           className="max-w-2xl"
         >
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-6">
             Writings and thought pieces on belonging, becoming, and the ordinary moments that quietly reveal us.
           </p>
         </motion.div>
@@ -58,7 +58,7 @@ export default function WritingPage() {
         >
           <div className="quiet-rule mb-10" />
 
-          <div className="space-y-7 text-[#6b6560]">
+          <div className="space-y-7 text-[#e8e8e8]">
             <p className="text-[0.9rem] font-light leading-[1.9]">
               I write about the shapes feelings take, as an ongoing attempt to map the interior landscapes we often assume we inhabit alone.
             </p>
@@ -79,7 +79,7 @@ export default function WritingPage() {
               I care less about polished conclusions and more about recognition. If someone reads a piece and finds language for something they have carried for years, or laughs at an uncomfortable truth they had never admitted aloud, then the words have done their work.
             </p>
 
-            <p className="text-[0.9rem] font-light leading-[1.9] italic text-[#8a8078]">
+            <p className="text-[0.9rem] font-light leading-[1.9] italic text-[#f0f0f0]">
               These essays are my way of paying attention. Of connecting seemingly unrelated moments until a different shape of understanding begins to emerge.
             </p>
           </div>
@@ -113,14 +113,14 @@ export default function WritingPage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.08, duration: 0.7, ease: [0.25, 0.1, 0.25, 1] }}
               >
-                <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60" />
-                <span className="text-[0.85rem] md:text-[0.9rem] font-light text-[#2c2825]">{item}</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[#ff4ea4] shrink-0 opacity-60" />
+                <span className="text-[0.85rem] md:text-[0.9rem] font-light text-[white]">{item}</span>
               </motion.div>
             ))}
           </div>
 
           <div className="section-label mb-5">Currently exploring the intersection of</div>
-          <p className="text-[0.75rem] font-light tracking-wide text-[#6b6560] leading-[2.2]">
+          <p className="text-[0.75rem] font-light tracking-wide text-[#e8e8e8] leading-[2.2]">
             {['Emotional Culture', 'Identity', 'Gender', 'Visual Narrative', 'Human Contradiction'].map((tag, i) => (
               <motion.span
                 key={i}
@@ -129,7 +129,7 @@ export default function WritingPage() {
                 viewport={{ once: true }}
                 transition={{ delay: i * 0.05, duration: 0.6 }}
               >
-                {tag}{i < 4 && <span className="text-[#a0877a] mx-2">&middot;</span>}
+                {tag}{i < 4 && <span className="text-[#ff4ea4] mx-2">&middot;</span>}
               </motion.span>
             ))}
           </p>

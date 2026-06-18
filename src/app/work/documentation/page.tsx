@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function DocumentationPage() {
   return (
-    <main className="min-h-screen bg-[#f8f5f1]">
+    <main className="min-h-screen bg-[transparent]">
       {/* Back link */}
       <div className="max-w-[1100px] mx-auto px-6 md:px-10 pt-8">
         <Link href="/#work" className="nav-link inline-block">&larr; Back to Work</Link>
@@ -35,7 +35,7 @@ export default function DocumentationPage() {
               alt="Documentation & Storytelling"
               className="w-full aspect-video object-cover rounded-sm transition-transform duration-700 group-hover:scale-[1.02]"
             />
-            <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#a0877a] mt-3">
+            <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#ff4ea4] mt-3">
               Gender Transformative Videos, UNICEF India, 2025
             </p>
           </a>
@@ -49,13 +49,13 @@ export default function DocumentationPage() {
           className="max-w-2xl"
         >
           <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">Overview</h2>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-6">
             For over eight years, I have worked across India documenting social impact programmes for organizations including UNICEF, WHO, and UN Women.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-6">
             My work has spanned both written and audiovisual documentation across sectors such as public health, gender, education, community development, and behaviour change communication.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-16">
             What began as documentation evolved into end-to-end narrative building: translating complex grassroots realities into stories, films, reports, and communication products that institutions could use for advocacy, visibility, training, and public engagement.
           </p>
         </motion.div>
@@ -70,13 +70,13 @@ export default function DocumentationPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
               <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">Field-Based Storytelling</h2>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-6">
                 A large part of my work involved extensive field travel and on-ground coordination across diverse geographies and communities.
               </p>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-6">
                 Beyond capturing stories, I was also involved in pretesting communication materials directly with communities to understand how messaging was being received in real contexts. These insights often informed improvements in campaign products, narrative approaches, and visual communication strategies.
               </p>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078]">
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0]">
                 This process strengthened my ability to balance institutional objectives with emotional authenticity and cultural sensitivity.
               </p>
             </div>
@@ -86,7 +86,7 @@ export default function DocumentationPage() {
                 alt="Field-Based Storytelling"
                 className="w-full object-contain rounded-sm transition-transform duration-700 group-hover:scale-[1.02]"
               />
-              <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#a0877a] mt-3">
+              <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#ff4ea4] mt-3">
                 WeSTEM documentation in Chhindwara, MP for UN Women
               </p>
             </a>
@@ -105,10 +105,10 @@ export default function DocumentationPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
             <div>
               <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">End-to-End Documentation Leadership</h2>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-8">
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-8">
                 Over the years, I have independently handled multiple stages of the documentation pipeline, from concept development to final delivery.
               </p>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-4">
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-4">
                 My work included:
               </p>
               <ul className="space-y-3">
@@ -125,8 +125,8 @@ export default function DocumentationPage() {
                   'Managing feedback cycles and delivering final films',
                 ].map((item, i) => (
                   <li key={i} className="flex items-start gap-3">
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60 mt-2" />
-                    <span className="text-[0.9rem] font-light leading-[1.7] text-[#8a8078]">{item}</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#ff4ea4] shrink-0 opacity-60 mt-2" />
+                    <span className="text-[0.9rem] font-light leading-[1.7] text-[#f0f0f0]">{item}</span>
                   </li>
                 ))}
               </ul>
@@ -137,7 +137,7 @@ export default function DocumentationPage() {
                 alt="Video Documentation"
                 className="w-full object-contain rounded-sm"
               />
-              <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#a0877a] mt-3">
+              <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#ff4ea4] mt-3">
                 BMGF + UNICEF initiative for fecal sludge management, multi-state documentation
               </p>
             </div>
@@ -145,7 +145,7 @@ export default function DocumentationPage() {
 
           {/* Written Documentation */}
           <div className="mb-16 pt-12 md:pt-16">
-            <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-4">
+            <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-4">
               Alongside films, I also worked extensively on written documentation and publication projects. This included:
             </p>
             <ul className="space-y-3">
@@ -157,8 +157,8 @@ export default function DocumentationPage() {
                 'Coordinating directly with clients and creative vendors to ensure narrative and visual consistency',
               ].map((item, i) => (
                 <li key={i} className="flex items-start gap-3">
-                  <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60 mt-2" />
-                  <span className="text-[0.9rem] font-light leading-[1.7] text-[#8a8078]">{item}</span>
+                  <span className="w-1.5 h-1.5 rounded-full bg-[#ff4ea4] shrink-0 opacity-60 mt-2" />
+                  <span className="text-[0.9rem] font-light leading-[1.7] text-[#f0f0f0]">{item}</span>
                 </li>
               ))}
             </ul>
@@ -174,13 +174,13 @@ export default function DocumentationPage() {
           className="max-w-2xl pt-16 md:pt-24"
         >
           <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">Approach</h2>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-6">
             My approach to documentation combines journalistic observation, creative storytelling, and production management.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-6">
             I am particularly drawn to work that requires navigating complexity: building trust with communities, translating field realities into compelling narratives, and managing creative execution without losing emotional nuance.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-8">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-8">
             Across projects, my role often became a bridge between institutions, creative teams, and the people whose stories were being told.
           </p>
         </motion.div>

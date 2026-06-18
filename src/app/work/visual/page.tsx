@@ -5,7 +5,7 @@ import Link from 'next/link'
 
 export default function VisualPage() {
   return (
-    <main className="min-h-screen bg-[#f8f5f1]">
+    <main className="min-h-screen bg-[transparent]">
       {/* Back link */}
       <div className="max-w-[1100px] mx-auto px-6 md:px-10 pt-8">
         <Link href="/#work" className="nav-link inline-block">&larr; Back to Work</Link>
@@ -43,7 +43,7 @@ export default function VisualPage() {
           transition={{ duration: 0.8, delay: 0.25, ease: [0.25, 0.1, 0.25, 1] }}
           className="max-w-2xl"
         >
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[#f0f0f0] mb-6">
             Photography. Visual essays. Poems. Exhibition ideas. Short film scripts. Half-finished concepts. Pitches that never left the drafts folder.
           </p>
         </motion.div>
@@ -58,7 +58,7 @@ export default function VisualPage() {
         >
           <div className="quiet-rule mb-10" />
 
-          <div className="space-y-7 text-[#6b6560]">
+          <div className="space-y-7 text-[#e8e8e8]">
             <p className="text-[0.9rem] font-light leading-[1.9]">
               This is the work that doesn&apos;t always have a client, a brief, or a clear outcome.
             </p>
@@ -79,7 +79,7 @@ export default function VisualPage() {
               I have never belonged entirely to one medium. Perhaps this section is less about finding the right form and more about following an instinct wherever it leads.
             </p>
 
-            <p className="text-[0.9rem] font-light leading-[1.9] italic text-[#8a8078]">
+            <p className="text-[0.9rem] font-light leading-[1.9] italic text-[#f0f0f0]">
               These fragments may feel familiar, perhaps remind you of a room you&apos;ve inhabited briefly in your own life.
             </p>
           </div>
