@@ -27,7 +27,7 @@ function Nav() {
   const closeMenu = useCallback(() => setMenuOpen(false), [])
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 ${scrolled ? 'bg-white/10 backdrop-blur-lg' : 'bg-transparent'}`}>
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 ${scrolled ? 'bg-[#f8f5f1]/90 backdrop-blur-lg' : 'bg-transparent'}`}>
       <div className="max-w-[1100px] mx-auto px-6 md:px-10 py-5 flex items-center justify-between">
         <span className="font-extralight text-[0.8rem] tracking-[0.2em] uppercase opacity-0 select-none" style={{ fontFamily: 'var(--font-geist-sans)' }}>KG</span>
 
@@ -53,7 +53,7 @@ function Nav() {
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
             transition={{ duration: 0.4, ease: [0.25, 0.1, 0.25, 1] }}
-            className="md:hidden bg-white/10 backdrop-blur-lg px-6 pb-8 pt-2"
+            className="md:hidden bg-[#f8f5f1] px-6 pb-8 pt-2"
           >
             {['About', 'Work', 'Contact'].map((item, i) => (
               <motion.a
@@ -136,7 +136,7 @@ function Hero() {
             animate={{ opacity: 1 }}
             transition={{ duration: 1.5, delay: 1.3 }}
           >
-            <p className="text-[0.95rem] md:text-base font-light leading-[1.8] text-[#f0f0f0]">
+            <p className="text-[0.95rem] md:text-base font-light leading-[1.8] text-[#8a8078]">
               Creative strategist, storyteller, and documentation expert working at the intersection of social impact and narrative.
             </p>
           </motion.div>
@@ -162,7 +162,7 @@ function About() {
                   I come from a background in creative strategy and communication work across social impact and culture.
                 </h2>
                 <div className="quiet-rule mb-8" />
-                <p className="text-[0.7rem] font-mono tracking-[0.2em] uppercase text-[#ff4ea4] mb-6">
+                <p className="text-[0.7rem] font-mono tracking-[0.2em] uppercase text-[#a0877a] mb-6">
                   Over the last decade, I&apos;ve worked across
                 </p>
               </div>
@@ -185,8 +185,8 @@ function About() {
                     transition={{ delay: i * 0.06, duration: 0.5, ease: [0.25, 0.1, 0.25, 1] }}
                     className="flex items-center gap-2.5"
                   >
-                    <span className="w-1.5 h-1.5 rounded-full bg-[#ff4ea4] shrink-0 opacity-60" />
-                    <span className="text-[0.75rem] font-light tracking-wide text-[#e8e8e8]">{item}</span>
+                    <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60" />
+                    <span className="text-[0.75rem] font-light tracking-wide text-[#6b6560]">{item}</span>
                   </motion.div>
                 ))}
               </div>
@@ -203,7 +203,7 @@ function About() {
           >
             <div className="quiet-rule mb-10" />
             <div className="section-label mb-6">Clients and Collaborators</div>
-            <p className="text-[0.8rem] md:text-[0.85rem] font-light leading-[2.4] text-[#e8e8e8]">
+            <p className="text-[0.8rem] md:text-[0.85rem] font-light leading-[2.4] text-[#6b6560]">
               {[
                 'UNICEF (India Office and State Offices)',
                 'WHO (Country Office and SEARO)',
@@ -214,7 +214,7 @@ function About() {
                 'Startups',
               ].map((client, i, arr) => (
                 <span key={i}>
-                  {client}{i < arr.length - 1 && <span className="text-[#ff4ea4] mx-2">&middot;</span>}
+                  {client}{i < arr.length - 1 && <span className="text-[#a0877a] mx-2">&middot;</span>}
                 </span>
               ))}
             </p>
@@ -336,7 +336,7 @@ function Work() {
                     <h3 className="work-heading transition-colors duration-500">{item.category}</h3>
                   </div>
 
-                  <p className="text-[0.8rem] font-light leading-[1.7] text-[#f0f0f0] mb-4">
+                  <p className="text-[0.8rem] font-light leading-[1.7] text-[#8a8078] mb-4">
                     {item.description}
                   </p>
 
@@ -344,16 +344,16 @@ function Work() {
                     {item.link && (
                       <React.Fragment key="see-more">
                         {item.link.startsWith('http') ? (
-                          <a href={item.link} target="_blank" rel="noopener noreferrer" className="warm-tag hover:text-[white] cursor-pointer">See more ↗</a>
+                          <a href={item.link} target="_blank" rel="noopener noreferrer" className="warm-tag hover:text-[#2c2825] cursor-pointer">See more ↗</a>
                         ) : (
-                          <Link href={item.link} className="warm-tag hover:text-[white] cursor-pointer">See more ↗</Link>
+                          <Link href={item.link} className="warm-tag hover:text-[#2c2825] cursor-pointer">See more ↗</Link>
                         )}
                       </React.Fragment>
                     )}
                     {item.externalLink && (
                       <React.Fragment key="external">
-                        <span className="text-[#ff4ea4] mx-2 text-[0.55rem]">&middot;</span>
-                        <a href={item.externalLink} target="_blank" rel="noopener noreferrer" className="warm-tag hover:text-[white] cursor-pointer">{new URL(item.externalLink).hostname.replace('www.', '')} ↗</a>
+                        <span className="text-[#a0877a] mx-2 text-[0.55rem]">&middot;</span>
+                        <a href={item.externalLink} target="_blank" rel="noopener noreferrer" className="warm-tag hover:text-[#2c2825] cursor-pointer">{new URL(item.externalLink).hostname.replace('www.', '')} ↗</a>
                       </React.Fragment>
                     )}
                   </div>
@@ -379,20 +379,20 @@ function Contact() {
             Let&apos;s talk.
           </h2>
 
-          <p className="text-[0.85rem] font-light leading-[1.8] max-w-sm text-[#f0f0f0] mb-14">
+          <p className="text-[0.85rem] font-light leading-[1.8] max-w-sm text-[#8a8078] mb-14">
             For collaborations, creative projects, strategy work, or conversations.
           </p>
 
           <div className="max-w-md space-y-5">
             <a href="mailto:khushboo.workspace33@gmail.com" className="flex items-center gap-4 group">
-              <svg className="w-5 h-5 text-[#ff4ea4] group-hover:text-[white] transition-colors duration-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="w-5 h-5 text-[#a0877a] group-hover:text-[#2c2825] transition-colors duration-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <rect x="2" y="4" width="20" height="16" rx="2" />
                 <path d="M22 4L12 13L2 4" />
               </svg>
               <span className="contact-link">khushboo.workspace33@gmail.com</span>
             </a>
             <a href="https://www.linkedin.com/in/khushboogautam-1548847b/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group">
-              <svg className="w-5 h-5 text-[#ff4ea4] group-hover:text-[white] transition-colors duration-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <svg className="w-5 h-5 text-[#a0877a] group-hover:text-[#2c2825] transition-colors duration-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
                 <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
                 <rect x="2" y="9" width="4" height="12" />
                 <circle cx="4" cy="4" r="2" />
@@ -402,7 +402,7 @@ function Contact() {
           </div>
 
           <div className="mt-20 quiet-rule mb-6" />
-          <p className="font-mono text-[0.5rem] tracking-[0.3em] uppercase text-[#ff4ea4]">
+          <p className="font-mono text-[0.5rem] tracking-[0.3em] uppercase text-[#a0877a]">
             Less interested in perfection; more interested in thoughtfulness
           </p>
         </div>
@@ -414,9 +414,9 @@ function Contact() {
 /* ─── Footer ─── */
 function Footer() {
   return (
-    <footer className="px-6 md:px-10 py-8 border-t border-[#ff4ea4]/30">
+    <footer className="px-6 md:px-10 py-8 border-t border-[#e2dbd3]">
       <div className="max-w-[1100px] mx-auto flex items-center justify-center">
-        <span className="font-mono text-[0.5rem] tracking-[0.25em] uppercase text-[#ff4ea4]">
+        <span className="font-mono text-[0.5rem] tracking-[0.25em] uppercase text-[#a0877a]">
           Khushboo Gautam &copy; {new Date().getFullYear()}
         </span>
       </div>

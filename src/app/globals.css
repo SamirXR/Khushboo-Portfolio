@@ -44,37 +44,37 @@
 
 :root {
   --radius: 0.125rem;
-  --background: #e338b9;
-  --foreground: #ffffff;
-  --card: #ffffff;
-  --card-foreground: #e338b9;
-  --popover: #ffffff;
-  --popover-foreground: #e338b9;
-  --primary: #ffffff;
-  --primary-foreground: #e338b9;
-  --secondary: rgba(255, 255, 255, 0.08);
-  --secondary-foreground: #ffffff;
-  --muted: rgba(255, 255, 255, 0.06);
-  --muted-foreground: #f0f0f0;
-  --accent: #ff4ea4;
-  --accent-foreground: #ffffff;
+  --background: #f8f5f1;
+  --foreground: #2c2825;
+  --card: #f8f5f1;
+  --card-foreground: #2c2825;
+  --popover: #f8f5f1;
+  --popover-foreground: #2c2825;
+  --primary: #2c2825;
+  --primary-foreground: #f8f5f1;
+  --secondary: #efe9e2;
+  --secondary-foreground: #2c2825;
+  --muted: #e8e0d7;
+  --muted-foreground: #8a8078;
+  --accent: #a0877a;
+  --accent-foreground: #f8f5f1;
   --destructive: #b85c4a;
-  --border: rgba(255, 78, 164, 0.3);
-  --input: rgba(255, 78, 164, 0.3);
-  --ring: #ff4ea4;
+  --border: #d9d0c7;
+  --input: #d9d0c7;
+  --ring: #a0877a;
   --chart-1: oklch(0.646 0.222 41.116);
   --chart-2: oklch(0.6 0.118 184.704);
   --chart-3: oklch(0.398 0.07 227.392);
   --chart-4: oklch(0.828 0.189 84.429);
   --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: #e338b9;
-  --sidebar-foreground: #ffffff;
-  --sidebar-primary: #ffffff;
-  --sidebar-primary-foreground: #e338b9;
-  --sidebar-accent: rgba(255, 255, 255, 0.08);
-  --sidebar-accent-foreground: #ffffff;
-  --sidebar-border: rgba(255, 78, 164, 0.3);
-  --sidebar-ring: #ff4ea4;
+  --sidebar: #f8f5f1;
+  --sidebar-foreground: #2c2825;
+  --sidebar-primary: #2c2825;
+  --sidebar-primary-foreground: #f8f5f1;
+  --sidebar-accent: #efe9e2;
+  --sidebar-accent-foreground: #2c2825;
+  --sidebar-border: #d9d0c7;
+  --sidebar-ring: #a0877a;
 }
 
 @layer base {
@@ -82,10 +82,7 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply text-foreground;
-    background: linear-gradient(135deg, #8ef99f 0%, #ff6ec7 45%, #e338b9 100%);
-    background-attachment: fixed;
-    min-height: 100vh;
+    @apply bg-background text-foreground;
   }
 }
 
@@ -107,7 +104,7 @@
   left: 6rem;
   right: 6rem;
   height: 1px;
-  background: linear-gradient(90deg, transparent, rgba(255, 78, 164, 0.5) 20%, rgba(255, 78, 164, 0.5) 80%, transparent);
+  background: linear-gradient(90deg, transparent, #c4b8ad 20%, #c4b8ad 80%, transparent);
 }
 
 @media (max-width: 768px) {
@@ -120,7 +117,7 @@
 .section-divider .divider-dot {
   width: 5px;
   height: 5px;
-  background: #ff4ea4;
+  background: #a0877a;
   border-radius: 50%;
   position: relative;
   z-index: 1;
@@ -133,9 +130,8 @@
   font-weight: 200;
   letter-spacing: -0.04em;
   line-height: 0.88;
-  color: #ffffff;
+  color: #2c2825;
   font-size: clamp(2.5rem, 9vw, 6.5rem);
-  text-shadow: 0 2px 20px rgba(45, 27, 46, 0.15);
 }
 
 /* ── Section label ── */
@@ -144,7 +140,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: #ff4ea4;
+  color: #a0877a;
 }
 
 /* ── Nav link ── */
@@ -153,14 +149,14 @@
   font-size: 0.6rem;
   letter-spacing: 0.2em;
   text-transform: uppercase;
-  color: #f0f0f0;
+  color: #8a8078;
   text-decoration: none;
   padding: 0.4rem 0;
   transition: color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .nav-link:hover {
-  color: #ffffff;
+  color: #2c2825;
 }
 
 /* ── Soft button ── */
@@ -169,10 +165,10 @@
   font-size: 0.6rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
-  border: 1px solid rgba(255, 78, 164, 0.5);
+  border: 1px solid #c4b8ad;
   padding: 0.75rem 1.6rem;
   background: transparent;
-  color: #ffffff;
+  color: #8a8078;
   cursor: pointer;
   transition: all 0.45s cubic-bezier(0.25, 0.1, 0.25, 1);
   text-decoration: none;
@@ -180,10 +176,9 @@
 }
 
 .soft-btn:hover {
-  border-color: #ff4ea4;
-  background: rgba(255, 78, 164, 0.15);
-  color: #ffffff;
-  box-shadow: 0 0 12px rgba(255, 78, 164, 0.25);
+  border-color: #2c2825;
+  background: #2c2825;
+  color: #f8f5f1;
 }
 
 /* ── Tag (borderless) ── */
@@ -194,13 +189,13 @@
   text-transform: uppercase;
   border: none;
   padding: 0.25rem 0;
-  color: #f0f0f0;
+  color: #8a8078;
   display: inline-block;
   transition: all 0.35s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .warm-tag:hover {
-  color: #ff4ea4;
+  color: #2c2825;
 }
 
 /* ── Work card v2 (borderless image cards) ── */
@@ -217,7 +212,7 @@
 }
 
 .work-card-v2:hover .work-heading {
-  color: #ff4ea4;
+  color: #a0877a;
 }
 
 /* ── Work heading ── */
@@ -226,7 +221,7 @@
   font-size: 1rem;
   font-weight: 400;
   letter-spacing: -0.01em;
-  color: #ffffff;
+  color: #2c2825;
 }
 
 /* ── Work area item ── */
@@ -235,7 +230,7 @@
   font-size: 0.6rem;
   letter-spacing: 0.15em;
   text-transform: uppercase;
-  color: #f0f0f0;
+  color: #8a8078;
 }
 
 /* ── Section reveal ── */
@@ -258,7 +253,7 @@
   font-weight: 400;
   letter-spacing: -0.01em;
   text-decoration: none;
-  color: #ffffff;
+  color: #2c2825;
   transition: color 0.4s cubic-bezier(0.25, 0.1, 0.25, 1);
   position: relative;
 }
@@ -270,12 +265,12 @@
   left: 0;
   width: 0;
   height: 1px;
-  background: #ff4ea4;
+  background: #a0877a;
   transition: width 0.5s cubic-bezier(0.25, 0.1, 0.25, 1);
 }
 
 .contact-link:hover {
-  color: #ff4ea4;
+  color: #a0877a;
 }
 
 .contact-link:hover::after {
@@ -284,8 +279,8 @@
 
 /* ── Selection ── */
 ::selection {
-  background: #ff4ea4;
-  color: #ffffff;
+  background: #d9d0c7;
+  color: #2c2825;
 }
 
 /* ── Smooth scroll ── */
@@ -306,7 +301,7 @@ html {
 /* ── Thin rule inside sections ── */
 .quiet-rule {
   height: 1px;
-  background: rgba(255, 78, 164, 0.25);
+  background: #e2dbd3;
   border: none;
   width: 100%;
 }
