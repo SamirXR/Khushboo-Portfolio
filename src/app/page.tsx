@@ -262,7 +262,7 @@ function Work() {
       clients: [] as string[],
       link: '/work/brand' as string | undefined,
       externalLink: undefined as string | undefined,
-      image: '/work-brand.png',
+      image: '/work-brand-catalogue-v2.png',
     },
     {
       number: '05',

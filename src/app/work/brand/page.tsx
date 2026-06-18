@@ -33,7 +33,7 @@ export default function BrandVoicePage() {
           className="mb-16 mt-8"
         >
           <img
-            src="/work-brand-catalogue-v2.png"
+            src="/work-brand.png"
             alt="Brand & Voice"
             className="w-full aspect-video object-cover rounded-sm"
           />
@@ -108,22 +108,6 @@ export default function BrandVoicePage() {
           <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
             I pay particular attention to the gap between what organisations want to say and what audiences actually hear.
           </p>
-        </motion.div>
-
-        {/* Brand & Voice Catalogue */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: '-30px' }}
-          transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1] }}
-          className="mb-16"
-        >
-          <div className="section-label mb-6">Brand &amp; Voice Catalogue</div>
-          <img
-            src="/work-brand-catalogue-v2.png"
-            alt="Brand & Voice Catalogue"
-            className="w-full rounded-sm"
-          />
         </motion.div>
 
         {/* Turning Complexity into Connection */}
