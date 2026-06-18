@@ -35,6 +35,9 @@ export default function DocumentationPage() {
               alt="Documentation & Storytelling"
               className="w-full aspect-video object-cover rounded-sm transition-transform duration-700 group-hover:scale-[1.02]"
             />
+            <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#a0877a] mt-3">
+              Gender Transformative Videos, UNICEF India, 2025
+            </p>
           </a>
         </motion.div>
 
@@ -83,6 +86,9 @@ export default function DocumentationPage() {
                 alt="Field-Based Storytelling"
                 className="w-full object-contain rounded-sm transition-transform duration-700 group-hover:scale-[1.02]"
               />
+              <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#a0877a] mt-3">
+                WeSTEM documentation in Chhindwara, MP for UN Women
+              </p>
             </a>
           </div>
         </motion.div>
@@ -131,6 +137,9 @@ export default function DocumentationPage() {
                 alt="Video Documentation"
                 className="w-full object-contain rounded-sm"
               />
+              <p className="text-[0.7rem] md:text-[0.75rem] font-light tracking-wide italic text-[#a0877a] mt-3">
+                BMGF + UNICEF initiative for fecal sludge management, multi-state documentation
+              </p>
             </div>
           </div>
 
