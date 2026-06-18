@@ -11,7 +11,7 @@ const fadeUp = {
 
 export default function BintiCampaign() {
   return (
-    <main className="min-h-screen bg-[#f8f5f1]">
+    <main className="min-h-screen bg-[var(--background)]">
       {/* Back link */}
       <div className="max-w-[1100px] mx-auto px-6 md:px-10 pt-8">
         <Link href="/#work" className="nav-link inline-block">&larr; Back to Work</Link>
@@ -22,7 +22,7 @@ export default function BintiCampaign() {
         <motion.div {...fadeUp}>
           <div className="section-label mb-6">01 — Campaign Strategy</div>
           <h1 className="text-3xl md:text-5xl font-extralight tracking-tight mb-4">Binti</h1>
-          <p className="text-lg md:text-xl font-light tracking-tight text-[#8a8078] mb-8">
+          <p className="text-lg md:text-xl font-light tracking-tight text-[var(--muted-foreground)] mb-8">
             Giving Every Girl a Chance to Grow
           </p>
         </motion.div>
@@ -49,10 +49,10 @@ export default function BintiCampaign() {
           className="max-w-2xl"
         >
           <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">Campaign Overview</h2>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-6">
             In Tanzania, girls can legally be married as young as 14, often forcing them to leave school and limiting their health, safety, and future opportunities. UNICEF Tanzania wanted a public campaign capable of shifting the social narrative around child marriage and building widespread public support for change.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-16">
             I led the development of the campaign concept, presented multiple creative directions to the client, and ultimately pitched Binti — the idea that was selected for execution.
           </p>
         </motion.div>
@@ -66,13 +66,13 @@ export default function BintiCampaign() {
           className="max-w-2xl"
         >
           <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">The Idea</h2>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-6">
             I created Binti — meaning daughter in Swahili — as a symbolic character representing every school-going girl in Tanzania.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-6">
             The intention was to move the conversation away from statistics and toward emotional connection. Binti embodied possibility: a girl with dreams, education, curiosity, and a future still unfolding.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-16">
             Rather than framing girls as passive victims, the campaign positioned them as individuals whose potential deserved protection and investment.
           </p>
         </motion.div>
@@ -95,8 +95,8 @@ export default function BintiCampaign() {
               'Oversaw the visual storytelling, character development, and creative consistency across campaign assets',
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60 mt-2" />
-                <span className="text-[0.9rem] font-light leading-[1.7] text-[#8a8078]">{item}</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] shrink-0 opacity-60 mt-2" />
+                <span className="text-[0.9rem] font-light leading-[1.7] text-[var(--muted-foreground)]">{item}</span>
               </li>
             ))}
           </ul>
@@ -111,26 +111,26 @@ export default function BintiCampaign() {
           className="max-w-2xl"
         >
           <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">Design &amp; Narrative Approach</h2>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-8">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-8">
             A major focus of the campaign was ensuring Binti felt culturally authentic and instantly recognizable to Tanzanian audiences.
           </p>
 
           <div className="space-y-8 mb-16">
             <div>
               <h3 className="text-[0.85rem] font-normal tracking-tight mb-3">Cultural Identity Through Design</h3>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078]">
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)]">
                 Binti&apos;s clothing palette and ribbon were inspired by the Tanzanian national flag, connecting the character to national identity and collective responsibility.
               </p>
             </div>
             <div>
               <h3 className="text-[0.85rem] font-normal tracking-tight mb-3">Symbolism</h3>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078]">
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)]">
                 Her school satchel became a recurring visual symbol of education, aspiration, and the future child marriage interrupts.
               </p>
             </div>
             <div>
               <h3 className="text-[0.85rem] font-normal tracking-tight mb-3">Visual Language</h3>
-              <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078]">
+              <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)]">
                 The illustrations, environments, and storytelling motifs were designed to reflect everyday Tanzanian life, creating familiarity and emotional resonance across audiences.
               </p>
             </div>
@@ -146,13 +146,13 @@ export default function BintiCampaign() {
           className="max-w-2xl"
         >
           <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">Execution</h2>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-6">
             The campaign launched through an animated film supported by a dedicated microsite experience.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-6">
             The microsite was designed as an immersive storytelling journey that introduced audiences to Binti&apos;s world before inviting them to pledge support against child marriage.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-16">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-16">
             I worked closely with the design and animation teams to ensure the emotional tone and narrative remained consistent across all touchpoints.
           </p>
         </motion.div>
@@ -166,22 +166,22 @@ export default function BintiCampaign() {
           className="max-w-2xl"
         >
           <h2 className="text-xl md:text-2xl font-light tracking-tight mb-6">Impact</h2>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-8">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-8">
             The campaign gained significant traction across Tanzania within months of launch.
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-10">
-            <div className="border-t border-[#d9d0c7] pt-4">
+            <div className="border-t border-[var(--border)] pt-4">
               <p className="text-2xl md:text-3xl font-extralight tracking-tight mb-1">100,000+</p>
-              <p className="text-[0.7rem] font-mono tracking-[0.15em] uppercase text-[#a0877a]">Pledges on microsite</p>
+              <p className="text-[0.7rem] font-mono tracking-[0.15em] uppercase text-[var(--accent)]">Pledges on microsite</p>
             </div>
-            <div className="border-t border-[#d9d0c7] pt-4">
+            <div className="border-t border-[var(--border)] pt-4">
               <p className="text-2xl md:text-3xl font-extralight tracking-tight mb-1">Nationwide</p>
-              <p className="text-[0.7rem] font-mono tracking-[0.15em] uppercase text-[#a0877a]">Social &amp; community reach</p>
+              <p className="text-[0.7rem] font-mono tracking-[0.15em] uppercase text-[var(--accent)]">Social &amp; community reach</p>
             </div>
-            <div className="border-t border-[#d9d0c7] pt-4">
+            <div className="border-t border-[var(--border)] pt-4">
               <p className="text-2xl md:text-3xl font-extralight tracking-tight mb-1">Open-source</p>
-              <p className="text-[0.7rem] font-mono tracking-[0.15em] uppercase text-[#a0877a]">Binti became a participatory initiative</p>
+              <p className="text-[0.7rem] font-mono tracking-[0.15em] uppercase text-[var(--accent)]">Binti became a participatory initiative</p>
             </div>
           </div>
 
@@ -192,16 +192,16 @@ export default function BintiCampaign() {
               'UNICEF Tanzania later made Binti an open-source initiative, enabling NGOs, educators, influencers, and community leaders to create their own advocacy materials using the character',
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3">
-                <span className="w-1.5 h-1.5 rounded-full bg-[#a0877a] shrink-0 opacity-60 mt-2" />
-                <span className="text-[0.9rem] font-light leading-[1.7] text-[#8a8078]">{item}</span>
+                <span className="w-1.5 h-1.5 rounded-full bg-[var(--accent)] shrink-0 opacity-60 mt-2" />
+                <span className="text-[0.9rem] font-light leading-[1.7] text-[var(--muted-foreground)]">{item}</span>
               </li>
             ))}
           </ul>
 
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-6">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-6">
             What began as a campaign evolved into a broader participatory movement against child marriage.
           </p>
-          <p className="text-[0.9rem] font-light leading-[1.8] text-[#8a8078] mb-12">
+          <p className="text-[0.9rem] font-light leading-[1.8] text-[var(--muted-foreground)] mb-12">
             The Binti campaign, led on-ground by UNICEF Tanzania, was later selected for the Inspire Awards 2024.
           </p>
         </motion.div>
