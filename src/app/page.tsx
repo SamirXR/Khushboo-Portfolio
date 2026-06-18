@@ -142,17 +142,6 @@ function Hero() {
           </motion.div>
         </div>
       </motion.div>
-
-      <motion.div
-        className="absolute bottom-12 left-1/2 -translate-x-1/2"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 2.5, duration: 1.5 }}
-      >
-        <div className="flex flex-col items-center gap-3">
-          <div className="w-[1px] h-10 bg-[#d9d0c7] scroll-pulse" />
-        </div>
-      </motion.div>
     </div>
   )
 }
