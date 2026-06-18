@@ -33,7 +33,7 @@ export default function BrandVoicePage() {
           className="mb-16 mt-8"
         >
           <img
-            src="/work-brand.png"
+            src="/work-brand-catalogue-v2.png"
             alt="Brand & Voice"
             className="w-full aspect-video object-cover rounded-sm"
           />
